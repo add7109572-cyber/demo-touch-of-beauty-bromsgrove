@@ -1,21 +1,53 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Touch of Beauty — Bromsgrove</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700;900&display=swap" rel="stylesheet">
-<style>body{margin:0;font-family:'Cormorant Garamond',system-ui,sans-serif;background:#fff1f2;color:#222}
-nav{display:flex;justify-content:space-between;padding:16px 22px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)} nav a{color:#be185d;text-decoration:none;font-weight:700;margin-left:14px}
-.hero{padding:40px 22px} .hero img{width:100%;max-height:420px;object-fit:cover;border-radius:20px}
-.hero.split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center} .hero.split img{height:380px}
-.hero.dark{background:#111;color:#fff} .hero.dark img{opacity:.85} .hero.full{position:relative;padding:0} .hero.full img{max-height:70vh} .hero.full div{position:absolute;bottom:30px;left:24px;color:#fff;text-shadow:0 2px 12px #000}
-.hero.center{text-align:center} .hero.center img{max-width:720px;margin:20px auto;display:block}
-h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05} .btn{display:inline-block;background:#be185d;color:#fff;padding:13px 26px;border-radius:20px;text-decoration:none;font-weight:800}
-section{max-width:1080px;margin:auto;padding:36px 22px} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.svc{background:#fff;padding:20px;border-radius:20px;box-shadow:0 6px 18px rgba(0,0,0,.07);transition:.3s} .svc:hover{transform:translateY(-6px)} .svc a{color:#be185d;font-weight:700;text-decoration:none}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px} .gallery img{width:100%;height:200px;object-fit:cover;border-radius:20px}
-.reveal{animation:fadeup .8s ease both} @keyframes fadeup{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-.note{background:#fef3c7;padding:12px;border-radius:10px;text-align:center;margin-top:24px}
-@media(max-width:700px){.hero.split{grid-template-columns:1fr}}
-</style></head><body><nav><strong>Touch of Beauty</strong><span><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#book">Book</a></span></nav>
-<header class="hero center"><h1>Touch of Beauty</h1><p>Bromsgrove</p><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1200&q=80" alt="Touch of Beauty"><a class="btn" href="#book">Book an appointment</a></header>
-<section id="services"><h2>Services at Touch of Beauty</h2><div class="grid reveal"><div class="svc"><h3>Facials & Skin</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Nails</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Brow & Lash</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div><div class="svc"><h3>Waxing</h3><p>Expert care, tailored to you.</p><a href="#book">Book this →</a></div></div></section>
-<section id="gallery"><h2>Gallery</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=1200&q=80" alt="Touch of Beauty" loading="lazy"><img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?w=1200&q=80" alt="Touch of Beauty" loading="lazy"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80" alt="Touch of Beauty" loading="lazy"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=1200&q=80" alt="Touch of Beauty" loading="lazy"></div></section>
-<section id="book"><div style="background:#be185d;color:#fff;padding:36px;border-radius:20px;text-align:center"><h2>Visit Touch of Beauty in Bromsgrove</h2><p>Soft rose, centered serif — designed uniquely for this salon.</p><a class="btn" style="background:#fff;color:#be185d" href="#">Book now →</a></div><div class="note">Demo concept only — not the salon's official website. Photos are illustrative stock photos.</div></section>
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Touch of Beauty — Bromsgrove | Redesign Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Cormorant Garamond',serif;background:#fdf2f8;color:#222}
+.banner{background:#111;color:#fff;text-align:center;padding:12px 16px;font-weight:700;font-size:15px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+nav b{font-family:'Cormorant Garamond',serif;font-size:22px;color:#9d174d}
+nav a{color:#9d174d;text-decoration:none;font-weight:700;margin-left:14px}
+.hero{padding:38px 22px;max-width:1080px;margin:0 auto}
+.hero img{width:100%;border-radius:20px;object-fit:cover;max-height:420px}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;color:#9d174d}
+.hero p.lead{font-size:19px;line-height:1.6}
+.btn{display:inline-block;background:#9d174d;color:#fff;padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:700;margin:8px 8px 8px 0}
+.btn.ghost{background:#fff;color:#9d174d;border:2px solid #9d174d}
+section{max-width:1080px;margin:0 auto;padding:26px 22px}
+h2{font-family:'Cormorant Garamond',serif;color:#9d174d;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:#fff;border-radius:16px;padding:20px;box-shadow:0 4px 18px rgba(0,0,0,.07);transition:transform .25s}
+.card:hover{transform:translateY(-5px)}
+.prices{background:#fff;border-radius:16px;padding:8px 22px}
+.price{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.gallery img{width:100%;height:190px;object-fit:cover;border-radius:14px}
+.note{background:#fff8e1;border:1px solid #f0d98c;border-radius:12px;padding:16px}
+footer{background:#111;color:#ddd;text-align:center;padding:26px 18px;line-height:1.7}
+footer a{color:#fff}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.hero,section{animation:fade .7s ease both}
+</style></head><body>
+<div class="banner">Demo concept only — a redesign preview of Touch of Beauty’s website, not their full official site</div>
+<nav><b>Touch of Beauty</b><span><a href="#services">Services</a><a href="#visit">Visit</a></span></nav>
+<div class="hero">
+<h1>Beauty and holistic care, plus an aesthetics clinic.</h1>
+<p class="lead">Touch of Beauty in Bromsgrove, established 2010, pairs everyday beauty and holistic treatments with Bromsgrove Aesthetics, an advanced clinic offering a free confidential consultation.</p>
+<img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80" alt="Salon interior — illustrative stock photo">
+<p><a class="btn" href="http://www.touchofbeautybromsgrove.co.uk/">Visit the salon&#x27;s real website →</a>
+<a class="btn ghost" href="tel:+441527758212">Call 01527 758212</a></p>
+<p class="note">This demo does not take bookings. It previews a redesign &mdash; booking stays with the salon&rsquo;s real website and phone, exactly as today.</p>
+</div>
+<section id="services"><h2>What we do</h2><div class="grid"><div class="card"><h3>Beauty &amp; holistic</h3><p>Beauty and holistic treatments, including facials, shellac nails and brow shaping.</p></div><div class="card"><h3>Aesthetics clinic</h3><p>Advanced clinic work, including hair removal, skin rejuvenation and pelvic-floor strengthening.</p></div><div class="card"><h3>Free confidential consultation</h3><p>A free confidential consultation with the specialist practitioner for clinic work.</p></div><div class="card"><h3>Booking ahead is essential</h3><p>The salon is busy, so booking ahead is essential — the salon&#x27;s own honest advice, kept prominent.</p></div></div></section>
+
+<section><h2>What this redesign fixes</h2><ul><li>The fetched homepage gave a new visitor almost nothing to browse; this demo splits it into two clear lanes: Beauty and Aesthetics Clinic.</li><li>Treatments are now a browsable menu instead of a short summary paragraph.</li><li>Phone and email sit in one visit section, with the consultation offer as the clear next step.</li><li>No prices are invented: the salon&#x27;s homepage publishes none, so prices are marked as on consultation.</li></ul></section>
+<section><h2>Gallery</h2><div class="gallery">
+<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80" alt="Hair styling — illustrative stock photo">
+<img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1200&q=80" alt="Salon treatment — illustrative stock photo">
+<img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80" alt="Salon detail — illustrative stock photo">
+</div><p>Photos are illustrative stock photos, not photos of this salon.</p></section>
+<section id="visit"><h2>Visit us</h2><p>6 The Strand, Bromsgrove B61 8AB</p><p>Phone: 01527 758212 · Email: touchofbeautygirls@gmail.com (from the salon&#x27;s own description)</p><p>Opening hours are not shown here, as none was rendered in the salon&#x27;s homepage fetch — please call to check.</p></section>
+<footer><div class="banner">Demo concept only — a redesign preview of Touch of Beauty’s website, not their full official site</div><br>Demo concept only. Photos are illustrative stock photos.
+<br>Real website: <a href="http://www.touchofbeautybromsgrove.co.uk/">http://www.touchofbeautybromsgrove.co.uk/</a></footer>
 </body></html>
